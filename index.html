@@ -52,11 +52,11 @@
   <header>
     <div class="sobre">Bodes do Asfalto Moto Clube</div>
     <h1>Política de privacidade do app Bodes BDA</h1>
-    <p class="suave">Última atualização: 7 de outubro de 2026</p>
+    <p class="suave">Última atualização: 6 de novembro de 2026</p>
   </header>
 
   <div class="cartao">
-    <p><strong>Resumo.</strong> O app registra o km das suas viagens para o desafio do moto clube. A localização só é usada enquanto você grava uma viagem. O admin da sua subsede vê suas viagens para aprovar. Os outros membros veem seu nome, seu km e seus patches; suas rotas aparecem no mapa da subsede sem os primeiros e os últimos 2 km e sem o seu nome. Você pode excluir sua conta e todos os seus dados pelo próprio app.</p>
+    <p><strong>Resumo.</strong> O app registra o km das suas viagens para o desafio do moto clube. A localização só é usada enquanto você grava uma viagem. O admin da sua subsede vê suas viagens para aprovar. Os membros da sua subsede veem seu nome (ou apelido), seu km e seu colete; suas rotas aparecem no mapa da subsede sem os primeiros e os últimos quilômetros e sem o seu nome. Enquanto você grava uma viagem, Bodes de outras subsedes podem ver sua posição só de forma aproximada. Você pode excluir sua conta e todos os seus dados pelo próprio app.</p>
   </div>
 
   <h2>1. Quem é responsável</h2>
@@ -64,13 +64,13 @@
 
   <h2>2. Quais dados o app usa</h2>
   <ul>
-    <li><strong>Conta:</strong> nome, e-mail, foto de perfil (se você enviar) e a subsede da qual você faz parte.</li>
+    <li><strong>Conta:</strong> nome, apelido de estrada (se você escolher), e-mail, foto de perfil (se você enviar) e a subsede da qual você faz parte.</li>
     <li><strong>Viagens gravadas com GPS:</strong> a rota, a distância, o tempo em movimento, as velocidades e as pausas. O GPS só é usado entre o momento em que você toca em gravar e o momento em que você finaliza a viagem; durante a gravação, o celular mostra um aviso fixo.</li>
-    <li><strong>Viagens sem GPS:</strong> as fotos do painel na saída e na chegada, os números do hodômetro, e a hora e o local em que cada foto foi tirada. A leitura automática do número é feita no próprio celular; a foto não é enviada a terceiros para isso. Os dados escondidos da foto original (como o modelo do celular) são removidos antes do envio.</li>
-    <li><strong>Bodes na estrada:</strong> se essa opção estiver ligada, enquanto você grava uma viagem sua posição aproximada fica visível para outros membros que também estejam usando o app, para que possam ajudar em caso de problema. Você pode desligar nas configurações do colete.</li>
+    <li><strong>Viagens sem GPS:</strong> as fotos do painel na saída e na chegada, os números do hodômetro, e a hora e o local em que cada foto foi tirada. Se a foto vier da galeria, o app usa a data em que ela foi tirada, gravada na própria foto. A leitura automática do número é feita no próprio celular; a foto não é enviada a terceiros para isso. Os demais dados escondidos da foto original (como o modelo do celular e o local de origem) são removidos antes do envio.</li>
+    <li><strong>Bodes na estrada:</strong> se essa opção estiver ligada, enquanto você grava uma viagem sua posição fica visível para outros membros do clube a até 150 km, para que possam ajudar em caso de problema. Membros da sua subsede veem a posição exata e podem conversar com você; membros de outras subsedes veem só a posição aproximada (cerca de 1 km), o nome ou apelido e a subsede. Você não aparece nos primeiros 2 km depois de sair, nem enquanto a gravação estiver pausada por você. Dá para desligar nas configurações do colete.</li>
     <li><strong>Pedido de ajuda:</strong> quando você toca em "preciso de ajuda", sua posição e a mensagem vão para os membros próximos e para a sua subsede.</li>
-    <li><strong>Patches e desafio:</strong> estados, capitais e países conquistados, e a sua posição no ranking da subsede.</li>
-    <li><strong>Mensagens:</strong> as conversas do chat do app.</li>
+    <li><strong>Patches e desafio:</strong> estados, capitais e países conquistados (calculados pelo servidor a partir da rota das viagens aprovadas), os patches que você escolhe mostrar no colete e a sua posição no ranking da subsede.</li>
+    <li><strong>Mensagens:</strong> as conversas do chat do app, que só acontecem entre membros da mesma subsede.</li>
     <li><strong>Notificações:</strong> um identificador do aparelho para enviar avisos (viagem aprovada, pedidos de ajuda, mensagens).</li>
   </ul>
 
@@ -80,6 +80,7 @@
     <li>Permitir que o admin da subsede confira e aprove viagens sem GPS e lançamentos.</li>
     <li>Montar o seu colete digital e o seu mapa pintado.</li>
     <li>Ajudar membros em viagem a se encontrarem em caso de necessidade.</li>
+    <li>Manter o desafio justo: o servidor compara o km com a rota gravada e avisa o admin sobre viagens fora do normal ou fotos repetidas.</li>
   </ul>
   <p>Os dados não são vendidos, não são usados para publicidade e não são compartilhados com empresas para fins comerciais.</p>
 
@@ -87,14 +88,18 @@
   <ul>
     <li><strong>Você:</strong> todas as suas viagens, fotos e dados.</li>
     <li><strong>Admin da sua subsede:</strong> suas viagens, rotas e fotos do hodômetro, para aprovar e organizar o desafio, e pode exportar a planilha da temporada.</li>
-    <li><strong>Membros da sua subsede:</strong> seu nome, foto, km por mês, posição no ranking e patches. No mapa da subsede, suas rotas aparecem sem os primeiros e os últimos 2 km e sem identificação de quem fez.</li>
+    <li><strong>Membros da sua subsede:</strong> seu nome ou apelido, foto, km por mês, posição no ranking, colete e patches. No mapa da subsede, suas rotas aparecem sem os primeiros e os últimos 2 a 4 km e sem identificação de quem fez.</li>
+    <li><strong>Membros de outras subsedes:</strong> só enquanto você grava uma viagem com "Bodes na estrada" ligado: nome ou apelido, subsede e posição aproximada. Eles não veem suas viagens, seu colete nem seus dados de conta.</li>
+    <li><strong>Quem não é membro aprovado:</strong> não vê nada seu.</li>
   </ul>
 
   <h2>5. Onde os dados ficam</h2>
   <p>Os dados ficam armazenados no Supabase (banco de dados e arquivos). As notificações passam pelo Firebase, do Google. Os mapas são exibidos pelo Google Maps. Esses serviços podem processar dados fora do Brasil, seguindo as proteções exigidas pela LGPD.</p>
+  <p>No celular, o app guarda as viagens que ainda não foram enviadas numa pasta separada para cada conta, e esses arquivos não entram no backup automático do aparelho.</p>
 
   <h2>6. Por quanto tempo</h2>
-  <p>Enquanto sua conta existir. Ao excluir a conta, o perfil, as viagens, as fotos, os patches, as conversas e os identificadores de notificação são apagados. Planilhas da temporada já exportadas pelo admin antes da exclusão ficam sob responsabilidade da subsede.</p>
+  <p>Enquanto sua conta existir. Alguns registros são apagados antes, automaticamente: avisos já enviados para o celular depois de 30 dias, notificações lidas depois de 90 dias (as não lidas, depois de 180), pedidos de ajuda depois de 90 dias e a sua posição na estrada assim que a viagem termina (no máximo em um dia).</p>
+  <p>Ao excluir a conta, o perfil, as viagens, as fotos, os patches, as conversas e os identificadores de notificação são apagados. Planilhas da temporada já exportadas pelo admin antes da exclusão ficam sob responsabilidade da subsede.</p>
 
   <h2>7. Como excluir sua conta</h2>
   <p>No app, vá em <strong>Colete → Configurações → Excluir minha conta</strong>. Se preferir, peça por e-mail para <a href="mailto:otavioogatti@gmail.com">otavioogatti@gmail.com</a> e a exclusão é feita em até 15 dias.</p>
